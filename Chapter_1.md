@@ -47,5 +47,17 @@
 ### Hardware Faults
 
 
+- Hardware failures can be : hard disks crash, RAM becomes faulty, the power grid has a blackout, unplugging wrong network cable
+- First thing can be done to add rendundancy to inidividual hardware components in order to reduce the failure rate of the system
+- Until recently, redundancy was sufficient but now we are using large number of machines so multi machine redundancy is required so we don't do this
+- Now we focus on flexibility and elastivciy rather than on single-machine reliablity
+
+
+### Software Errors
+
+- Hardware faults are genrally random and independent from each other, except some common cause is there such as temperer in the server rack
+- Software faults are systematic faults 
+- The software faults lie domrant for a long time until they aere triggerte by an usuual set of circumstances
+
 
 
