@@ -55,9 +55,38 @@
 
 ### Software Errors
 
-- Hardware faults are genrally random and independent from each other, except some common cause is there such as temperer in the server rack
+- Hardware faults are genrally random and independent from each other, except some common cause is there such as temperature in the server rack
 - Software faults are systematic faults 
-- The software faults lie domrant for a long time until they aere triggerte by an usuual set of circumstances
+- The software faults lie domrant for a long time until they are trigger by an usual set of circumstances. Only under those circumstances it is revealed that the software is making some kind of assumption about its environment -- and while that assumptions is usually true, it eventually stops being true for some reason.
+- There is no quick solution to the problem of systematic faults in software. 
+- Lots of small things can help:
+ 1. carefully thinking about assumptions and interactions in the system
+ 2. Thorough testing
+ 3. Process isolation
+ 4. allowing process to crash and restart
+ 5. measuring, monitoring and analysing system behoaviour in production
+
+
+### Human Errors
+
+- Software is designed, built and maintained by humans, so humans errors can also cause harm to the system
+- So we can have many approaches to make system reliable inspite of unreliable of humans
+  1. Minimise the opportunities for error by well designed abstraction, APIs , admin interfaces etc.
+  2. Decouple the places where people make the most mistakes from the places where they can cause failures
+  3. Test thoroughly at all levels unit testing, whole system integration tests and manual tests
+  4. Allow quick and easy recovery from human errors to minimise the impact in the case of failure; for example make it fast to roll back configuration changes
+  5. Set up detailed and cleare monitoring such as performance metrics and error rates
+  6. Implement good management practices and training
+  
+  
+  ### How important is reliability?
+  
+  - Reliablity is important for all types of application because application developer have a responsibility to their users
+  - Sometimes we sacrifice reliabilty to reduce development cost or operataional cost -- but we should be very consicous of when we are cutting corners
+  
+  
+ ## Scalability
+ 
 
 
 
